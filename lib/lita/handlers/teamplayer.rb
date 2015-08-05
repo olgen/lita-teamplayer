@@ -71,7 +71,7 @@ module Lita
 
       def format_song(song)
         s = OpenStruct.new(song)
-        "##{s.id}: score=#{s.score} -- #{s.title}"
+        "👍#{s.score} :musical_score:#{s.id} #{s.url}"
       end
 
       def post(url, data={})
